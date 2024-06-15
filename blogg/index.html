@@ -1,0 +1,15 @@
+<script src="https://cdn.front.nu/nightly/front.js"></script>
+<title>Blogg</title>
+<template srcdoc="../../index" src="../../templates/test"></template>
+<h2 bindglobal="title:title" settext="{title}" globalize-get="{title}"></h2>
+<hr class="bcblack01">
+<div id="loader" class="loader"></div>
+<div
+  data-src="../assets/blogs.json"
+  data-iterate="true"
+
+  data-onerror="alert:error">
+
+  <div data-get="swe"></div>
+ 
+</div>
